@@ -18,7 +18,7 @@ Launch the container in detached mode with the necessary volume mounts:
 
 ```bash
 docker run -d --name cpulse \
-  -v /root/docker/cpulse/.env:/app/.env \
+  -v /root/docker/cpulse/config.json:/app/config.json \
   -v /root/docker/cpulse/containers.json:/app/containers.json \
   -v /var/run/docker.sock:/var/run/docker.sock:ro \
   skywirex/cpulse

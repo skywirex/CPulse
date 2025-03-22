@@ -8,7 +8,7 @@ class TelegramBot:
     def send_telegram_message(self, message):
         """Send a message via Telegram bot with explicit UTF-8 encoding."""
         if not self.TELEGRAM_BOT_TOKEN or not self.TELEGRAM_CHAT_ID:
-            print("Telegram bot token or chat ID not set in .env. Skipping notification.")
+            print("Telegram bot token or chat ID not set in config.json file. Skipping notification.")
             return
 
         url = f"https://api.telegram.org/bot{self.TELEGRAM_BOT_TOKEN}/sendMessage"
