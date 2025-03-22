@@ -1,0 +1,8 @@
+{
+    "telegram_bot_token": "your_bot_token_here",
+    "telegram_chat_id": "your_chat_id_here",
+    "json_url": "https://example.com/containers.json",
+    "local_json_path": "containers.json",
+    "state_file": "container_states.json",
+    "check_interval": 60
+}
